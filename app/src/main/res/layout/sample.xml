@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageListView"
+        android:layout_width="157dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:text="2021-06-01"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/imageListView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/condition"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:text="Partly cloudy"
+        android:textColor="#1B1A1A"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/imageListView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="34dp" />
+
+    <TextView
+        android:id="@+id/maxTemp"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:text="Max Temp: 95.6°C"
+        android:textColor="#888080"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/imageListView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/condition"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="61dp" />
+
+    <TextView
+        android:id="@+id/minTemp"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:text="Min Temp: 95.5°C"
+        android:textColor="#888080"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/imageListView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/maxTemp"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="96dp" />
+
+    <TextView
+        android:id="@+id/sunRise"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:text="Sun Rise: 6:44AM"
+        android:textColor="#888080"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/imageListView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/minTemp"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <TextView
+        android:id="@+id/sunSet"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:text="Sun Set: 6:44PM"
+        android:textColor="#888080"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/imageListView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sunRise"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="149dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
